@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Product Page</title>
+ 
+<link rel="stylesheet" href="styles\stockinfo.css">
+
+</head>
+<body>
+	<header>
+		<div class="navbar">
+		   
+			<div>
+				<ul>
+					<li class="searbar"> 
+
+					  <form>
+						<input type="search" placeholder="Search...">
+						<button id="button" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+					  </form>
+					  
+					 
+					</li>
+					  <div class="floatnav">
+					   <div class="floatnavupgrade">
+						<li><a href="/">Home</a></li>
+						<li><a href="/news">News</a></li>
+						
+						<li class="dropdown">
+						  <a href="javascript:void(0)" class="dropbtn">Menu bar</i></i></a>
+						  <div class="dropdown-content">
+							<a href="/profile">Profile</a>
+							<a href="/wallet">Wallet</a>
+							<a href="/signin">Sign in/Out</a>
+						  </div>
+					   </div>
+					   
+					  </div>
+					
+					</li>
+				  </ul>
+			</div>
+		</div>
+
+	
+
+	</header>
+
+
+<div class="logo" id="imageContainer"></div>
+<div class="section-fluid-main">
+		<div class="section">
+	      	<div class="info-wrap mob-margin">
+	      		<p class="title-up">Stock</p>
+	      		<h2>Stock Name</h2>
+	      		<h4>Stock Price:</h4>	
+	      		<div class="section-fluid">
+	      			<input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked/>
+	      			<label for="desc-1">Description</label> 
+		      		<div class="section-fluid desc-sec accor-1">
+		      			<p>Stock ka discription dediyo thoda bhut</p>
+		      		</div>		
+	      		</div>	
+	      	
+	      	</div>
+	      	
+	      	<div class="info-wrap">
+				<a href="card.ejs" class="btn"><i class="uil uil-shopping-cart icon"></i> Enter card details </a>
+
+				<a href="https://www.cryptocurrencycheckout.com/donate/iJeBU43hsO"><i class="fa-brands fa-ethereum fa-2xl" style="color: #f7f9fd;"> Eth</i></i></a>
+				
+				<a href="https://nowpayments.io/donation/stocksnap" target="_blank">
+					<img src="https://forkast.news/wp-content/uploads/2021/12/polygon-768x432.jpg" width="150vw" height="70vh" alt="Crypto donation button by NOWPayments">
+				   </a>
+
+	      	</div>
+					
+		</div>
+	</div>
+<!-- partial -->
+<script src="https://kit.fontawesome.com/02278d5655.js" crossorigin="anonymous"></script>
+
+  <script>
+	// In your "script.js" file
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to load an image from a URL
+  function loadImageFromURL(url) {
+    const image = new Image();
+    image.src = url;
+    image.onload = function() {
+      // Add the loaded image to the image container
+      const imageContainer = document.getElementById("imageContainer");
+      imageContainer.innerHTML = ""; // Clear any previous content
+      imageContainer.appendChild(image);
+    };
+  }
+
+  // Call the function with the URL of the image you want to display
+  const imageUrl = "https://d28wu8o6itv89t.cloudfront.net/images/BuTInTataTelecomjpg-1596437247509.jpeg"; // Replace with the desired image URL
+  loadImageFromURL(imageUrl);
+});
+
+  </script>
+
+</body>
+</html>

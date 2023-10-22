@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./profile_css.css"> -->
+    <title>Profile</title>
+   
+    <link rel="stylesheet" href="styles\profile.css">
+    
+    <script src="https://kit.fontawesome.com/02278d5655.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="navbar">
+           
+            <div>
+                <ul>
+                    <li class="searbar"> 
+                      
+
+                      
+                        
+
+                      <form>
+                        <input type="search" placeholder="Search...">
+                        <button id="button" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                      </form>
+                      
+                     
+                    </li>
+                      <div class="floatnav">
+                        <li><a href="/StockSnap">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Menu Bar</i></i></a>
+                          <div class="dropdown-content">
+                           
+                                <a href="/wallet">Wallet</a>
+                                <a href="/signin">Sign in/Out</a>
+                          </div>
+                      </div>
+                    
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+    
+
+    </header>
+</div>   
+<div class="main">
+    
+</div>
+    <div class="profile-card">
+        <div class="inner-profile">
+            <div class="profile-name">Ibrahim khan</div>
+            <div class="profile-info">
+                <p><strong>Username:</strong>khan9380</p>               
+                <p><strong>Account Type:</strong>Normal</p>   
+                
+                <a id="logoutbutton" href="signin.ejs" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span>Log out 
+                    <i id="logout" class="fa-solid fa-right-from-bracket"></i>
+                  </a>
+                <!-- Add more user information here -->
+            </div>
+        </div>
+    </div>
+    <div class="profile-pict">
+      <div id="profile-container">
+        <image id="profileImage" src="aDefaultImage.png" />
+     </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/02278d5655.js" crossorigin="anonymous"></script>
+</body>
+</html>

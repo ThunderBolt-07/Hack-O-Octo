@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #191A19;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Your existing CSS styles remain the same */
+p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #fff;
+  margin: 0;
+}
+.section-fluid-main{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.section{
+  position: relative;
+  max-width: calc(100% - 40px);
+  width: 860px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 70px 0;
+}
+.section-fluid{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+  position: absolute;
+  visibility: hidden;
+}
+
+.info-wrap{
+  position: relative;
+  margin-left: 500px;
+  z-index: 10;
+  display: block;
+  text-align: left;
+}
+.title-up {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+h4 span{
+  text-decoration: line-through;
+  font-size: 20px;
+  opacity: 0.6;
+  padding-left: 15px;
+}
+
+.desc-btn:checked + label,
+.desc-btn:not(:checked) + label{
+  position: relative;
+  transition: all 200ms linear;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-right: 25px;
+  opacity: 0.5;
+}
+.desc-btn:checked + label{
+  opacity: 1;
+}
+.desc-btn:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.desc-sec {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  transition: all 250ms linear;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.desc-sec.accor-2 {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#desc-1:checked ~ .desc-sec.accor-1 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.icon {
+  padding-right: 7px;
+  font-size: 20px;
+}
+.btn:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1;
+  background-color: #944852;
+  transition: background-color 250ms 300ms ease;
+}
+.btn:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #000;
+}
+/* Add styles for the background image */
+.logo {
+    /* Adjust the size and visibility of the image container */
+    width: 50vh;
+    height: 100vh;
+    float: left;
+    /* background: linear-gradient(196deg, #aaadac, #838786); */
+    background-size: cover;
+    display: block;
+  }
+  
+  #imageContainer img {
+    /* Adjust the size and visibility of the image */
+    max-width: 30vw;
+    max-height: 50vh;
+    margin-left: 18vw;
+    margin-top: 30vh;
+    display: block;
+    border-radius: 30px;
+
+  }
+
+.section-fluid-main {
+  position: relative;
+  display: block;
+  width: calc(100% - 50vh); /* Adjust width to make room for the logo */
+  overflow: hidden;
+  float: right; /* Add this to make it display side by side */
+}
+
+/* Rest of your CSS remains the same */
+
+
+
+@media screen and (max-width: 991px) {
+  .section{
+    margin: 0 auto;
+    text-align: center;
+    max-width: calc(100% - 40px);
+    width: 370px;
+  }
+  label.first-color{
+    margin-left: 0;
+  }
+  .info-wrap{
+    margin-left: 0;
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .img-wrap{
+    width: 375px;
+    height: 308px;
+    left: 50%;
+    margin-left: -190px;
+  }
+  .mob-margin {
+    margin-top: 320px;
+  }
+  .desc-btn:checked + label,
+  .desc-btn:not(:checked) + label{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .color-btn:checked + label,
+  .color-btn:not(:checked) + label{
+    height: 40px;
+    width: 40px;
+    margin: 5px auto;
+    text-align: center;
+  }
+  .section-inline{
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .section{
+    width: 280px;
+  }
+  .info-wrap{
+    width: 280px;
+  }
+  .color-btn:checked + label,
+  .color-btn:not(:checked) + label{
+    height: 30px;
+    width: 30px;
+  }
+  .section-inline p span{
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .section-inline p{
+    font-size: 14px;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(138, 177, 103);
+}
+
+li.dropdown {
+    
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+
+  button[type="submit"] {
+    
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    filter: invert(100%);
+    
+  
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+  
+ 
+  
+#button{
+    border-radius: 7px;
+}
+
+li{
+    margin-top: 8px;
+  float: left;
+  
+}
+
+.floatnav{
+   display: flex;
+   justify-content: end;
+   font-size: 1.4rem;
+   margin-right: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    left: 92.2%;
+  right: auto;
+  transform: translateX(-50%);
+
+    
+  }
+
+.floatnavupgrade{
+  font-size: .9rem;
+}
+  
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+
+    
+  }
+
+  .fa-brands{
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    width: 50vh;
+}

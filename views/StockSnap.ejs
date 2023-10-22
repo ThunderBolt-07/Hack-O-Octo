@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSnap</title>
+    <link rel="stylesheet" href="styles\StockSnap.css">
+    <script src="https://kit.fontawesome.com/02278d5655.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    
+    <div class="container">
+     
+
+        <header>
+            <div class="navbar">
+               
+                <div>
+                    <ul>
+                        <li class="searbar"> 
+                          <form method="POST" action="/search">
+                            <input type="search" placeholder="Search..." name="cname">
+                            <button id="button" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                          </form>
+                          
+                         
+                        </li>
+                          <div class="floatnav">
+                           <div class="floatnavupgrade">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/news">News</a></li>
+                            
+                            <li class="dropdown">
+                              <a href="javascript:void(0)" class="dropbtn">Menu bar</i></i></a>
+                              <div class="dropdown-content">
+                                <a href="/profile">Profile</a>
+                                <a href="/wallet">Wallet</a>
+                                <a href="/signin">Sign in/Out</a>
+                              </div>
+                           </div>
+                           
+                          </div>
+                        
+                        </li>
+                      </ul>
+                </div>
+            </div>
+
+        
+
+        </header>
+
+        <main>
+          <video id="video1" width="1920" height="1080"  autoplay loop muted src="styles\bgvideo.mp4"></video>
+        </main>
+
+        <div class="maincontant">
+          <section>
+            <div class="leftbox">
+              <p>Dive into <br>
+                the World of <br>
+                Stocks
+              </p>
+            </div>
+          </section>
+  
+          <section>
+            <div class="bar">
+              <p>.</p>
+            </div>
+          </section>
+         
+          <section>
+            <div class="topbarcontent">Always on TOP</div>
+            <div class="topbar">
+              <p></p>
+            </div>
+            <div class="rightbox">
+              <p>
+                <video id="video2" height: "50vh" width: "30vw" autoplay muted loop src="styles\frontvideo.mp4"></video>
+              </p>
+            </div>
+          </section>
+        </div>
+     
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+	<script src="../web.js"></script>
+   
+</body>
+</html>
